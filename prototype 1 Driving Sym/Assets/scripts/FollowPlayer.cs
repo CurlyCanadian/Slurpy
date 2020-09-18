@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class FollowPlayer : MonoBehaviour
 {
     public GameObject Player;
@@ -16,7 +17,10 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //makes camera follow the players position with an offset
         transform.position = Player.transform.position + offset;
+        //makes camera turn with the player EXPERIMENTAL
+        //transform.rotate = Player.transform.rotate;
         
     }
 }
