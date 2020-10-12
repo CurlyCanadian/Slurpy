@@ -23,5 +23,6 @@ public class OutOfBounds : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
 }
