@@ -14,7 +14,9 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void start()
     {
-        InvokeRepeating("spawnRandomAnimals", startDelay, spawnInterval);
+        //start SpawnRandomAnimals In 2 seconds(startDelay) with 1.5 Seconds inbetween(spawnInterval)
+        InvokeRepeating("SpawnRandomAnimals", startDelay, spawnInterval);
+        
     }
 
     // Update is called once per frame
@@ -24,7 +26,7 @@ public class SpawnManager : MonoBehaviour
     }
     
 
-    void spawnRandomAnimals()
+    void SpawnRandomAnimals()
     {
         //Randomly Generate Animal Index And Spawn Position
         int animalIndex = Random.Range(0, animalPrefabs.Length);
@@ -34,4 +36,5 @@ public class SpawnManager : MonoBehaviour
         Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
 
     }
+
 }

@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
         //collect input data on horizontal controls
         horizontalInput = Input.GetAxis("Horizontal");
         //moves the player to the left and right
-        transform.Translate(Vector3.left * horizontalInput * Time.deltaTime * speed);
+        transform.Translate(Vector3.right * -horizontalInput * Time.deltaTime * speed);
 
         //keeps player in boudary --left
         if(transform.position.x < -xRange)

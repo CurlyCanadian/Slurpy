@@ -2031,3 +2031,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc324ef6869245ae933183acd440afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TopBounds: -40
+  BottomBounds: 30
