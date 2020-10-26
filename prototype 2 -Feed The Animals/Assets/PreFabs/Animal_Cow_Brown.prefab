@@ -985,8 +985,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ecf472a97b34b11b19d197647858d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TopBounds: -40
-  BottomBounds: 30
+  TopBounds: 33
+  BottomBounds: -20
 --- !u!65 &-8890242962991097613
 BoxCollider:
   m_ObjectHideFlags: 0

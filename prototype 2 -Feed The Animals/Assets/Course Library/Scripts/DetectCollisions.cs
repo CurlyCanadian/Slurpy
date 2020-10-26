@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-    public float TopBounds = -40.0f;
-    public float BottomBounds = 30.0f;
+    public float TopBounds = 33.0f;
+    public float BottomBounds = -40.0f;
     
     void OnTriggerEnter(Collider other)
     {
