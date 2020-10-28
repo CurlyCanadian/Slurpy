@@ -14,8 +14,7 @@ GameObject:
   - component: {fileID: 436751998546700178}
   - component: {fileID: 436751998546700177}
   - component: {fileID: 5247969771399614819}
-  - component: {fileID: 6896234393501492818}
-  - component: {fileID: -3332015380551044748}
+  - component: {fileID: 4042680736111990188}
   m_Layer: 0
   m_Name: Energy_Drink
   m_TagString: Untagged
@@ -30,13 +29,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436751997528709728}
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.31, y: 1.67, z: 26.94}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &436751997527901792
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -110,11 +109,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436751997528709728}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.20451984, y: 0.6926298, z: 0.54039097}
-  m_Center: {x: 0.0060874373, y: 0.099894226, z: 0.015096188}
+  m_Size: {x: 0.19234496, y: 0.4928414, z: 0.190015}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5247969771399614819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,20 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20db9d2215bb94a94ae313490d818ebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
---- !u!114 &6896234393501492818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 436751997528709728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bc324ef6869245ae933183acd440afa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-3332015380551044748
+  speed: 5
+--- !u!114 &4042680736111990188
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,5 +139,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ecf472a97b34b11b19d197647858d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TopBounds: 33
-  BottomBounds: -20
+  TopBounds: -40
+  BottomBounds: 30
