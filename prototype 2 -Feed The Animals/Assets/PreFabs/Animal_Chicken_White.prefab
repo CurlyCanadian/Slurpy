@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 7641764790082760650}
   - component: {fileID: 7641764789602668797}
   - component: {fileID: 7641764789602668799}
+  - component: {fileID: 8863008840903100559}
   - component: {fileID: -712743273803063627}
   - component: {fileID: 4302289357942543764}
   m_Layer: 0
@@ -206,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20db9d2215bb94a94ae313490d818ebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 7
 --- !u!114 &7641764789602668799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,6 +222,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TopBounds: 33
   BottomBounds: -20
+--- !u!114 &8863008840903100559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7641764790073312454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc324ef6869245ae933183acd440afa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &-712743273803063627
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -651,8 +664,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc324ef6869245ae933183acd440afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TopBounds: -40
-  BottomBounds: 30
 --- !u!1 &7641764790073502562
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 436751998546700178}
   - component: {fileID: 436751998546700177}
   - component: {fileID: 5247969771399614819}
-  - component: {fileID: 4042680736111990188}
   - component: {fileID: 6896234393501492818}
+  - component: {fileID: -3332015380551044748}
   m_Layer: 0
   m_Name: Energy_Drink
   m_TagString: Untagged
@@ -128,7 +128,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
---- !u!114 &4042680736111990188
+--- !u!114 &6896234393501492818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436751997528709728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc324ef6869245ae933183acd440afa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3332015380551044748
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,17 +154,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TopBounds: 33
   BottomBounds: -20
---- !u!114 &6896234393501492818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 436751997528709728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bc324ef6869245ae933183acd440afa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TopBounds: 33
-  BottomBounds: -40

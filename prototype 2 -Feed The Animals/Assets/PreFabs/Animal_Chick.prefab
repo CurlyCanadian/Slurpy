@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 1331168208010738088}
   - component: {fileID: 1331168208120903438}
   - component: {fileID: 1331168208120903436}
+  - component: {fileID: 8507016222192902569}
   - component: {fileID: -1924984181545359036}
   - component: {fileID: -349851178133092964}
   m_Layer: 0
@@ -160,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20db9d2215bb94a94ae313490d818ebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 7
 --- !u!114 &1331168208120903436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,6 +176,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TopBounds: 33
   BottomBounds: -20
+--- !u!114 &8507016222192902569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331168208003350558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc324ef6869245ae933183acd440afa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &-1924984181545359036
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -245,6 +258,7 @@ GameObject:
   - component: {fileID: 1331168208003229346}
   - component: {fileID: 1331168208006575948}
   - component: {fileID: 3976815794566405530}
+  - component: {fileID: 4092267331595791778}
   m_Layer: 0
   m_Name: SA_Animal_Chick
   m_TagString: Untagged
@@ -337,8 +351,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc324ef6869245ae933183acd440afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TopBounds: -40
-  BottomBounds: 30
+--- !u!114 &4092267331595791778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331168208003360658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc324ef6869245ae933183acd440afa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1331168208003426748
 GameObject:
   m_ObjectHideFlags: 0
