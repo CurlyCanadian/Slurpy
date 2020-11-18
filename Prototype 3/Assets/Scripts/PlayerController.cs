@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRb, enemyRb;
     public float jumpForce = 10;
-    public float gravityModifier;
+    public float gravityModifier =1;
     public bool isOnGround = true;
     public bool gameOver = false;
     
@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameOver = false;
         playerRb = GetComponent<Rigidbody>();
         Physics.gravity *= gravityModifier;
         PlayerAnim = GetComponent<Animator>();
@@ -32,8 +33,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(gameOver);
         //Check for key press/spacebar is pressed
-        
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {   
             //jump code

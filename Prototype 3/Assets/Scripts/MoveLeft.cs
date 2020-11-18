@@ -5,20 +5,19 @@ using UnityEngine;
 public class MoveLeft : MonoBehaviour
 {
     public float speed = 30;
-    public PlayerController PlayerControllerScript;
-    private float leftBound = -15;
+    public PlayerController playerControllerScript;
+    private float leftBound = -16;
     
     void Start()
     {
-        PlayerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
     }    
     // Update is called once per frame
     void Update()
     {
-        if(PlayerControllerScript.gameOver == false)
+        if(playerControllerScript.gameOver == false)
         {
-        //Moves The GameObject
-        transform.Translate(Vector3.left * Time.deltaTime * speed);
+            transform.Translate(Vector3.left * Time.deltaTime * speed);
         }
         if(transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
         {
