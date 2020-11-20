@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameOver = false;
         playerRb = GetComponent<Rigidbody>();
         Physics.gravity *= gravityModifier;
         PlayerAnim = GetComponent<Animator>();
@@ -33,7 +32,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(gameOver);
+
+
         //Check for key press/spacebar is pressed
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {   
@@ -51,18 +51,22 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+
         if(collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
             dirtParticle.Play();
         }
         else if(collision.gameObject.CompareTag("Obstacle"))
+        {
             Debug.Log("Game Over!");
             gameOver = true;
+            isOnGround = false;
             PlayerAnim.SetBool("Death_b", true);
-            PlayerAnim.SetInteger("DeathType_int", 6);
+            PlayerAnim.SetInteger("DeathType_int", 1);
             explosionParticle.Play();
             dirtParticle.Stop();
             PlayerAudio.PlayOneShot(crashSound, 1.0f);
+        }
     }
 }   
