@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     {
         playerRb = GetComponent<Rigidbody>();
         focalPoint = GameObject.Find("Focal Point");
-        
+        powerupIndicator.gameObject.SetActive(false);
     }
     private void onTriggerEnter(Collider other) 
     {
